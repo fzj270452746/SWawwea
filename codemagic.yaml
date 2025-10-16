@@ -1,20 +1,20 @@
 workflows:
   ios-native-quick-start:
-    name: Swasieyw
+    name: osoieskkos
     max_build_duration: 120
     instance_type: mac_mini_m2
     integrations:
-      app_store_connect: eq
+      app_store_connect: pros
     environment:
       ios_signing:
         distribution_type: app_store
-        bundle_identifier: com.sawwea
+        bundle_identifier: com.osoiesk.kos
       vars:
         BUNDLE_ID: $bundle_identifier
         PROJECT_PATH: "SWawwea" #5:工程名称
         XCODE_WORKSPACE: "$PROJECT_PATH/$PROJECT_PATH.xcworkspace"
         XCODE_SCHEME: $PROJECT_PATH
-        APP_STORE_APPLE_ID: 6754092678
+        APP_STORE_APPLE_ID: 6754093678
       xcode: latest # <-- set to specific version e.g. 14.3, 15.0 to avoid unexpected updates.
       cocoapods: default
     scripts:
